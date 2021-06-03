@@ -1,43 +1,43 @@
 version: '3.1'
 
 services:
-    s_api_gateway:
-        container_name: c_api_gateway
-        image: ekremsaydam/apigateway
-        build:
-        context: .
-        dockerfile: APIGateway/Dockerfile
-        ports:
-        - 80:80
-        networks:
-        - micro_net
-        - int_net
+  s_api_gateway:
+    container_name: c_api_gateway
+    image: ekremsaydam/apigateway
+    build:
+    context: .
+    dockerfile: APIGateway/Dockerfile
+    ports:
+    - 80:80
+    networks:
+    - micro_net
+    - int_net
 
-    s_contact_api:
-        container_name: c_contact_api
-        image: ekremsaydam/contactapi
-        build: 
-            context: .
-            dockerfile: Services/ContactAPI/Contact.API/Dockerfile
-        ports: 
-            - 9000:9000
-        networks: 
-            - int_net
-
-    s_contact_api:
-        container_name: c_res_api
-        image: ekremsaydam/resapi
-        build: 
-            context: .
-            dockerfile: Services/ResAPI/Reservation.API/Dockerfile
-        ports: 
-            - 9001:9001
-        networks: 
-            - int_net
+  s_contact_api:
+    container_name: c_contact_api
+    image: ekremsaydam/contactapi
+    build: 
+      context: .
+      dockerfile: Services/ContactAPI/Contact.API/Dockerfile
+    ports: 
+      - 9000:9000
+    networks: 
+      - int_net
             
+  s_contact_api:
+    container_name: c_res_api
+    image: ekremsaydam/resapi
+    build: 
+      context: .
+      dockerfile: Services/ResAPI/Reservation.API/Dockerfile
+    ports: 
+      - 9001:9001
+    networks: 
+      - int_net
+
 network:
-    int_net:
-        driver: overlay
-        internal: true
-    micro_net:
-        driver: bridge
+  int_net:
+    driver: overlay
+    internal: true
+  micro_net:
+    driver: bridge
