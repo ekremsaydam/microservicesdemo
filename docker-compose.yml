@@ -15,7 +15,7 @@ services:
 
   s_contact_api:
     container_name: c_contact_api
-    image: ekremsaydam/contactapi
+    image: ekremsaydam/capi
     build: 
       context: .
       dockerfile: Services/ContactAPI/Contact.API/Dockerfile
