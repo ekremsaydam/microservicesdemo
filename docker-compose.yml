@@ -8,14 +8,14 @@ services:
       context: .
       dockerfile: APIGateway/Dockerfile
     ports:
-      - 80:80
+      - 1000:1000
     networks:
       - micro_net
       - int_net
 
   s_contact_api:
     container_name: c_contact_api
-    image: ekremsaydam/capi
+    image: ekremsaydam/contactapi
     build: 
       context: .
       dockerfile: Services/ContactAPI/Contact.API/Dockerfile
