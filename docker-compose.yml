@@ -35,7 +35,7 @@ services:
     networks: 
       - int_net
 
-network:
+networks:
   int_net:
     driver: overlay
     internal: true
