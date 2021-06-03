@@ -12,7 +12,6 @@ services:
 		networks:
 		- micro_net
 		- int_net
-	
 	s_contact_api:
 		container_name: c_contact_api
 		image: ekremsaydam/contactapi
@@ -23,7 +22,6 @@ services:
 			- 9000:9000
 		networks: 
 			- int_net
-
 	s_contact_api:
 		container_name: c_res_api
 		image: ekremsaydam/resapi
@@ -34,7 +32,6 @@ services:
 			- 9001:9001
 		networks: 
 			- int_net
-
 network:
 	int_net:
 		driver: overlay
