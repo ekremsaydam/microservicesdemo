@@ -8,10 +8,10 @@ services:
     context: .
     dockerfile: APIGateway/Dockerfile
     ports:
-    - 80:80
+      - 80:80
     networks:
-    - micro_net
-    - int_net
+      - micro_net
+      - int_net
 
   s_contact_api:
     container_name: c_contact_api
