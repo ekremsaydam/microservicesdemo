@@ -24,7 +24,7 @@ services:
     networks: 
       - int_net
             
-  s_contact_api:
+  s_res_api:
     container_name: c_res_api
     image: ekremsaydam/resapi
     build: 
