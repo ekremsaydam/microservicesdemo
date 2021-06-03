@@ -5,8 +5,8 @@ services:
     container_name: c_api_gateway
     image: ekremsaydam/apigateway
     build:
-    context: .
-    dockerfile: APIGateway/Dockerfile
+      context: .
+      dockerfile: APIGateway/Dockerfile
     ports:
       - 80:80
     networks:
