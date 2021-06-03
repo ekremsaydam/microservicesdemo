@@ -3,7 +3,7 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:1000",
+      "applicationUrl": "http://localhost:80",
       "sslPort": 0
     }
   },
@@ -20,11 +20,10 @@
     "APIGateway": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "weatherforecast",
+      "launchUrl": "r/1",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
-      },
-      "applicationUrl": "http://localhost:5000"
+      }
     },
     "Docker": {
       "commandName": "Docker",
