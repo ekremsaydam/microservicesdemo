@@ -29,7 +29,8 @@
       "commandName": "Docker",
       "launchBrowser": true,
       "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/api/contact/1",
-      "publishAllPorts": true
+      "publishAllPorts": true,
+      "useSSL": false
     }
   }
 }
