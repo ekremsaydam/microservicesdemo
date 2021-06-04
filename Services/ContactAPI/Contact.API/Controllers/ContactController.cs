@@ -21,9 +21,9 @@ namespace Contact.API.Controllers
         }
 
         [HttpGet("{id}")]
-        public ContactDTO Get(int Id)
+        public ContactDTO Get(int id)
         {
-            return contractService.GetContactById(Id);
+            return contractService.GetContactById(id);
         }
     }
 }
