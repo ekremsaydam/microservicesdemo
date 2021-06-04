@@ -5,8 +5,9 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
+          //"Host": "localhost",
           "Host": "c_res_api",
-          "Port": 5001
+          "Port": 8001
         }
       ],
       "UpstreamPathTemplate": "/r/{id}",
@@ -17,8 +18,9 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
+          //"Host": "localhost",
           "Host": "c_contact_api",
-          "Port": 5000
+          "Port": 8000
         }
       ],
       "UpstreamPathTemplate": "/c/{id}",

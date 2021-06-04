@@ -20,8 +20,9 @@ services:
             context: .
             dockerfile: Services/ContactAPI/Contact.API/Dockerfile
         ports:
-            - 5000:5000
+            - 8000:8000
         networks:
+            - micro_net
             - int_net
 
     s_res_api:
@@ -31,8 +32,9 @@ services:
             context: .
             dockerfile: Services/ResAPI/Reservation.API/Dockerfile
         ports:
-            - 5001:5001
+            - 8001:8001
         networks:
+            - micro_net
             - int_net
 
 networks:
