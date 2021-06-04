@@ -6,7 +6,7 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "c_res_api",
-          "Port": 8000
+          "Port": 9001
         }
       ],
       "UpstreamPathTemplate": "/r/{id}",
