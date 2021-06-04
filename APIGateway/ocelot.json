@@ -6,7 +6,6 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "c_res_api",
-          //"Host": "localhost",
           "Port": 5001
         }
       ],
@@ -19,7 +18,6 @@
       "DownstreamHostAndPorts": [
         {
           "Host": "c_contact_api",
-          //"Host": "localhost",
           "Port": 5000
         }
       ],
