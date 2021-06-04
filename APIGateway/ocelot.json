@@ -18,8 +18,8 @@
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          //"Host": "localhost",
           "Host": "c_contact_api",
+          //"Host": "localhost",
           "Port": 8000
         }
       ],
