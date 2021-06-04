@@ -22,6 +22,7 @@ services:
         ports:
             - 8000:8000
         networks:
+            - micro_net
             - int_net
 
     s_res_api:
@@ -33,6 +34,7 @@ services:
         ports:
             - 8001:8001
         networks:
+            - micro_net
             - int_net
 
 networks:
